@@ -26,17 +26,20 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold mb-8 text-center">Work Experience</h2>
+    <section id="experience" className="max-w-4xl mx-auto py-20">
+      <h2 className="section-heading">Work Experience</h2>
       <div className="space-y-6">
         {experiences.map((exp) => (
-          <div key={exp.title} className="bg-white rounded-lg shadow-lg p-6">
-            <h3 className="text-xl font-semibold text-blue-600">{exp.title}</h3>
-            <p className="text-lg font-medium text-gray-700 mb-2">{exp.company}</p>
-            <p className="text-gray-600 mb-4">{exp.period}</p>
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
+          <div key={exp.title} className="card">
+            <h3 className="text-xl font-semibold text-blue-400 mb-2">{exp.title}</h3>
+            <p className="text-lg font-medium text-gray-300 mb-2">{exp.company}</p>
+            <p className="text-gray-400 mb-4">{exp.period}</p>
+            <ul className="space-y-2 text-gray-300">
               {exp.responsibilities.map((resp, index) => (
-                <li key={index}>{resp}</li>
+                <li key={index} className="flex items-start">
+                  <span className="text-blue-400 mr-2">•</span>
+                  {resp}
+                </li>
               ))}
             </ul>
           </div>

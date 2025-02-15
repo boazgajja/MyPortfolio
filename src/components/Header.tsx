@@ -22,7 +22,7 @@ const Header = () => {
     <header className="min-h-screen flex items-center justify-center bg-gray-900 relative overflow-hidden animated-gradient">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-gray-900 to-gray-900"></div>
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h1 className="text-7xl font-bold mb-8 gradient-text">Gajja Boaz</h1>
+        <h1 className="text-7xl font-bold mb-8 gradient-text leading-tight tracking-normal">Gajja Boaz</h1>
         <h2 className="text-3xl mb-8 text-emerald-400">
           I am a <span ref={el} className="text-emerald-500"></span>
         </h2>

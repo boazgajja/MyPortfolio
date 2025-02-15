@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="card">
         <p className="text-lg text-gray-300 mb-6 text-center">
           I'm always open to exciting collaborations and tech discussions. 
-          If you're interested in working together, feel free to reach out! 
+          If you're interested in working together please reach out
           Let's innovate and build something extraordinary!
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

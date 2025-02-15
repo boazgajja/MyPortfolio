@@ -33,7 +33,7 @@ const Education = () => {
       <div className="space-y-6">
         {education.map((edu) => (
           <div key={edu.degree} className="card">
-            <h3 className="text-xl font-semibold text-emerald-400">{edu.degree}</h3>
+            <h3 className="text-xl font-semibold text-blue-400">{edu.degree}</h3>
             <p className="text-lg font-medium text-gray-300">{edu.school}</p>
             <div className="flex justify-between text-gray-400 mt-2">
               <span>{edu.period}</span>
@@ -43,7 +43,7 @@ const Education = () => {
         ))}
       </div>
 
-      <h3 className="text-2xl font-bold mt-12 mb-6 text-center text-emerald-400">Certifications</h3>
+      <h3 className="text-2xl font-bold mt-12 mb-6 text-center text-blue-400">Certifications</h3>
       <div className="card">
         <ul className="list-disc list-inside space-y-2 text-gray-300">
           {certifications.map((cert, index) => (
